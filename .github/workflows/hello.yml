@@ -6,4 +6,4 @@ jobs:  # ジョブの定義
     steps:  # ステップの定義
       - name: Hello World  # ステップ名
         run: echo "Hello, World!"  # 実行するコマンド
-      - uses: acitions/checkout@v4 # リポジトリのチェックアウト 
+      - uses: actions/checkout@v3 # リポジトリのチェックアウト

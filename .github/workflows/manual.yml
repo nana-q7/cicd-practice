@@ -1,0 +1,14 @@
+name: Manual
+on:
+  workflow_dispatch:  # 手動トリガー
+    inputs:
+      greeting:
+        type: string
+        description: 'Greeting message'
+        required: true
+        default: 'Hello, World!'
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${{ github.event.inputs.greeting }}"
